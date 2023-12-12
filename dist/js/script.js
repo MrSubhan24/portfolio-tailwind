@@ -26,10 +26,10 @@ hamburger.addEventListener('click', function () {
 
 // Klik di luar hamburger
 window.addEventListener('click', function (e) {
-    if (e.target != hamburger && e.target != navMenu) {
-        hamburger.classList.remove('hamburger-active');
-        navMenu.classList.add('hidden');
-    }
+  if (e.target != hamburger && e.target != navMenu && !hamburger.contains(e.target)) {
+      hamburger.classList.remove('hamburger-active');
+      navMenu.classList.add('hidden');
+  }
 });
 
 // Darkmode Toggle

@@ -1453,7 +1453,10 @@ body {
   }
 }
 
-
+img{
+    max-width: 100%;
+    height: auto
+}
 
 @media (min-width: 1280px) {
   .xl\:mx-8 {
